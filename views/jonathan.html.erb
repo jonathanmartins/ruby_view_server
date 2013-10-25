@@ -1,0 +1,12 @@
+<h1>Page Generator Test</h1>
+
+<p>This list is an trivial example using erb code and a iterator ;)</p>
+
+<ul>
+	<% projects_and_priorities = {:concreto => 3, 
+		:safira => 2, :recommender => 1} %>
+
+	<% projects_and_priorities.each do |project, priority| %>
+	<li>The project <%= project.upcase %> has priority: <%= priority %></li>
+	<% end %>
+</ul>
